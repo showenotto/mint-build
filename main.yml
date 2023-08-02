@@ -1,7 +1,5 @@
 ---
   - name: "Setting up Linux Mint"
     hosts: localhost
-    tasks:
-      - name: "Demo"
-        debug:
-          msg: "Hello Ansible"
+    roles:
+      - roles/configurations/cinnamon-desktop

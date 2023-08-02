@@ -1,0 +1,4 @@
+---
+  - name: Setting Cinnamon desktop configurations...
+    debug:
+      msg: "Hello cinnamon"
