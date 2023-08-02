@@ -1,4 +1,5 @@
 ---
   - name: Restoring Cinnamon desktop configurations...
-    shell: "dconf load / < /home/showen/mint-build/roles/configurations/cinnamon-desktop/files/mint-dconf"
+    shell: bash /home/showen/mint-build/roles/configurations/cinnamon-desktop/files/restore.sh
     become: true
+    become_user: showen
