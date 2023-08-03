@@ -63,7 +63,7 @@ for i in $PORT; do
 	alias $i="ncat -lnp $i"
 done
 #^mint
-alias mint-backup=""
+alias mint-backup="ansible localhost -m include_role -a name=/home/showen/mint-build/roles/sync-configurations/"
 #$mint
 
 
