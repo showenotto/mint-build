@@ -19,9 +19,6 @@
           src: /home/showen/.config/dconf/user
           dest: /home/showen/kali-build/roles/configurations/cinnamon-desktop/files/settings.dconf
   - name: Pushing changes to Git repository...
-    vars:
-      TOKEN:  ""
-      GIT_COMMAND: "git push https://ominousSHELL:{{ TOKEN }}@github.com/ominousSHELL/kali-build.git"
     shell: "git add . && git commit -m '1.0' && git push"
     args:
       chdir: /home/showen/kali-build/
