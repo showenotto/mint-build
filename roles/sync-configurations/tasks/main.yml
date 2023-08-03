@@ -15,9 +15,7 @@
           src: /home/showen/.zshrc
           dest: /home/showen/kali-build/roles/configurations/zsh/files/
       - name: 
-        copy:
-          src: /home/showen/.config/dconf/user
-          dest: /home/showen/kali-build/roles/configurations/cinnamon-desktop/files/settings.dconf
+        shell: echo 's?0001?1001?o' | su showen -c "dconf dump / > /home/showen/mint-build/roles/configurations/cinnamon-desktop/files/settings.dconf"
   - name: Pushing changes to Git repository...
     shell: "git add . && git commit -m '1.0' && git push"
     args:

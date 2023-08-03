@@ -1,6 +1,6 @@
 [com/linuxmint/updates]
 install-last-run=1690967766
-refresh-last-run=1690990862
+refresh-last-run=1691050032
 show-welcome-page=false
 window-height=570
 window-pane-position=344
@@ -58,6 +58,9 @@ repeat-interval=uint32 30
 
 [org/cinnamon/desktop/sound]
 event-sounds=false
+
+[org/cinnamon/settings-daemon/peripherals/keyboard]
+numlock-state='off'
 
 [org/cinnamon/theme]
 name='Mint-Y-Dark-Aqua'
