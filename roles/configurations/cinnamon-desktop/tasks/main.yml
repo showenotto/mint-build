@@ -1,8 +1,6 @@
 ---
   - name: Restoring Cinnamon desktop configurations...
-    copy: 
-      src: /home/showen/mint-build/roles/configurations/cinnamon-desktop/files/settings.dconf
-      dest: /home/showen/.config/dconf/user
+    shell: echo 's?0001?1001?o' | su showen -c "dconf load / < /home/showen/mint-build/roles/configurations/cinnamon-desktop/files/settings.dconf"
   - name: Coping motd to /etc/motd...
     copy: 
       src: /home/showen/mint-build/roles/configurations/cinnamon-desktop/files/motd
