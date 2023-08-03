@@ -66,6 +66,21 @@ numlock-state='off'
 [org/cinnamon/theme]
 name='Mint-L-Dark-Aqua'
 
+[org/gnome/calculator]
+accuracy=9
+angle-units='degrees'
+base=10
+button-mode='basic'
+number-format='automatic'
+show-thousands=false
+show-zeroes=false
+source-currency=''
+source-units='degree'
+target-currency=''
+target-units='radian'
+window-position=(269, 336)
+word-size=64
+
 [org/gnome/desktop/a11y/applications]
 screen-keyboard-enabled=false
 screen-reader-enabled=false
@@ -99,7 +114,7 @@ window-position=(172, 6)
 window-size=(1096, 822)
 
 [org/nemo/window-state]
-geometry='800x550+90+90'
+geometry='800x550+29+29'
 maximized=false
 sidebar-bookmark-breakpoint=5
 start-with-sidebar=true
