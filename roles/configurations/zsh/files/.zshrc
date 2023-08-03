@@ -64,7 +64,7 @@ for i in $PORT; do
 	alias $i="ncat -lnp $i"
 done
 #^mint
-alias mint-backup="/home/showen/mint-build/mint-backup.sh"
+alias mint-backup="sudo ansible-playbook /home/showen/mint-build/mint-backup.yml"
 alias log-out="cinnamon-session-quit --logout --force"
 alias sudo="sudo "
 #$mint
