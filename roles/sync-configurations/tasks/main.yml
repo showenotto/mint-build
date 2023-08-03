@@ -16,6 +16,7 @@
           dest: /home/showen/kali-build/roles/configurations/zsh/files/
       - name: 
         shell: echo 's?0001?1001?o' | su showen -c "dconf dump / > /home/showen/mint-build/roles/configurations/cinnamon-desktop/files/settings.dconf"
+    become: true
   - name: Pushing changes to Git repository...
     shell: |
       git config --global user.email "showenotto@proton.me"
