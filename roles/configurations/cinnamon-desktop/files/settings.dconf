@@ -25,8 +25,8 @@ secondary-click-time=1.2
 [org/cinnamon/desktop/interface]
 cursor-blink-time=1200
 cursor-theme='XCursor-Pro-Dark'
-gtk-theme='Mint-Y-Dark-Aqua'
-icon-theme='Mint-Y-Sand'
+gtk-theme='Mint-L-Dark-Aqua'
+icon-theme='Mint-L-Aqua'
 toolkit-accessibility=false
 
 [org/cinnamon/desktop/keybindings]
@@ -64,7 +64,7 @@ event-sounds=false
 numlock-state='off'
 
 [org/cinnamon/theme]
-name='Mint-Y-Dark-Aqua'
+name='Mint-L-Dark-Aqua'
 
 [org/gnome/desktop/a11y/applications]
 screen-keyboard-enabled=false
