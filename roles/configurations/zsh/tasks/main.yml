@@ -4,8 +4,8 @@
       name: zsh
       state: latest
   - name: Setting Zsh as default shell...
-    shell: "echo 's?0001?1001?o' | su showen -c 'chsh -s /bin/zsh'"
-  - name: Copying ZSH configuration file...
+    shell: su showen -c 'chsh -s /bin/zsh'
+  - name: Copying Zsh configuration file...
     copy:
         src: /home/showen/mint-build/roles/configurations/zsh/files/.zshrc
         dest: /home/showen/.zshrc
