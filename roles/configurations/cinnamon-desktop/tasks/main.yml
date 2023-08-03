@@ -5,7 +5,7 @@
       dest: /home/showen/.config/dconf/user
   - name: Coping motd to /etc/motd...
     copy: 
-      src: /home/mint-build/roles/configurations/cinnamon-desktop/files/motd
+      src: /home/showen/mint-build/roles/configurations/cinnamon-desktop/files/motd
       dest: /etc/motd
     become: true
 

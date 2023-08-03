@@ -3,7 +3,7 @@
     apt:
       name: tmux
       state: present
-  - name: Copying tmux configuration file...
+  - name: Copying Tmux configuration file...
     copy:
       src: /home/showen/mint-build/roles/configurations/tmux/files/tmux.conf
       dest: /etc/tmux.conf
