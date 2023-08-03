@@ -1,0 +1,24 @@
+---
+  - name: Synchronize configuration files...
+    hosts: localhost
+    tasks:
+      - name: Backing up Tmux configuration...
+        copy:
+          src: /etc/tmux.conf
+          dest: /home/showen/mint-build/roles/configurations/tmux/files/
+      - name: Backuping Zsh configuraton...
+        copy:
+          src: /home/showen/.zshrc
+          dest: /home/showen/mint-build/roles/configurations/zsh/files/
+      - name: Backuping Vim configuraton...
+        copy:
+          src: /home/showen/.vimrc
+          dest: /home/showen/mint-build/roles/configurations/vim/files/
+      - name: Pushing changes to git repository...
+        shell: |
+          git add .
+          git commit -m "1.0"
+          git push
+        args:
+          chdir: /home/showen/mint-build/
+    become: true
