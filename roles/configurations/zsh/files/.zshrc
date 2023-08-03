@@ -64,6 +64,7 @@ for i in $PORT; do
 done
 #^mint
 alias mint-backup="ansible localhost -m include_role -a name=/home/showen/mint-build/roles/sync-configurations/"
+alias log-out="cinnamon-session-quit --logout --force"
 #$mint
 
 
