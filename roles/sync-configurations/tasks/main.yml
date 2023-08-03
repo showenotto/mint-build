@@ -21,4 +21,4 @@
   - name: Pushing changes to Git repository...
     shell: "git add . && git commit -m '1.0' && git push"
     args:
-      chdir: /home/showen/kali-build/
+      chdir: /home/showen/mint-build/
