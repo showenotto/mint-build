@@ -16,10 +16,15 @@
         copy:
           src: /home/showen/.vimrc
           dest: /home/showen/mint-build/roles/configurations/vim/files/
+      - name: Copying Sudoers configuration...
+        copy: 
+          src: /etc/sudoers
+          dest: /home/showen/mint-build/roles/configurations/cinnamon-desktop/files/sudoers
       - name: Pushing changes to git repository...
         shell: |
+          git config --global user.email "showenotto@proton.me"
           git add .
-          git commit -m "1.0"
+          git commit -m "1.0" 
           git push
         args:
           chdir: /home/showen/mint-build/
