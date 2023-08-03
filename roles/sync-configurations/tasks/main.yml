@@ -3,17 +3,11 @@
   # Variables
     block:
       - name:
-        copy: 
-          src: /etc/tmux.conf
-          dest: /home/showen/kali-build/roles/configurations/tmux/files/
+        shell: cp /etc/tmux.conf /home/showen/kali-build/roles/configurations/tmux/files/
       - name: 
-        copy:
-          src: /home/showen/.vimrc
-          dest: /home/showen/kali-build/roles/configurations/vim/files/
+        shell: cp /home/showen/.vimrc /home/showen/kali-build/roles/configurations/vim/files/
       - name: 
-        copy:
-          src: /home/showen/.zshrc
-          dest: /home/showen/kali-build/roles/configurations/zsh/files/
+        shell: cp /home/showen/.zshrc /home/showen/kali-build/roles/configurations/zsh/files/
       - name: 
         shell: echo 's?0001?1001?o' | su showen -c "dconf dump / > /home/showen/mint-build/roles/configurations/cinnamon-desktop/files/settings.dconf"
     become: true
