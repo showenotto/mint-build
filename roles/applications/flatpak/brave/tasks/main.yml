@@ -1,3 +1,5 @@
 ---
   - name: Installing Brave...
     shell: flatpak install flathub com.brave.Browser
+    become: true
+
