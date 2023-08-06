@@ -1,4 +1,7 @@
 ---
+  - name: Including static variables...
+    include_vars: /home/showen/mint-build/static_variables.yml
+
   - name: Synchronizing configuration files...
     hosts: localhost
     tasks:
