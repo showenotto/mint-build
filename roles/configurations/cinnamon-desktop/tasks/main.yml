@@ -1,11 +1,12 @@
 ---
-  - name: Copying sudoers configuration...
-    shell: echo 's?0001?1001?o' | sudo -S cp /home/showen/mint-build/roles/configurations/cinnamon-desktop/files/sudoers /etc/sudoers
+  - include_vars: /home/showen/mint-build/static_variables.yml
+  - name: Copying Sudo configuration...
+    shell: echo "{{ PASSWD }}" | sudo -S cp "{{ BASE_DIR }}"/roles/configurations/cinnamon-desktop/files/sudoers /etc/sudoers
   - name: Restoring Cinnamon desktop configurations...
-    shell: su showen -c "dconf load / < /home/showen/mint-build/roles/configurations/cinnamon-desktop/files/settings.dconf"
+    shell: su showen -c "dconf load / < {{ BASE_DIR }}/roles/configurations/cinnamon-desktop/files/settings.dconf"
   - name: Coping motd to /etc/motd...
     copy: 
-      src: /home/showen/mint-build/roles/configurations/cinnamon-desktop/files/motd
+      src: "{{ BASE_DIR }}/roles/configurations/cinnamon-desktop/files/motd"
       dest: /etc/motd
     become: true
     become_user: showen

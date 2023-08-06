@@ -2,7 +2,15 @@
   - name: "Setting up Linux Mint..."
     hosts: localhost
     roles:
+      #Configurations
       - roles/configurations/cinnamon-desktop
       - roles/configurations/tmux
       - roles/configurations/vim
       - roles/configurations/zsh
+      # Applications
+      - roles/applications/flatpak/vscode
+      - roles/applications/flatpak/brave
+      - roles/applications/flatpak/obsidian
+      - roles/applications/flatpak/steam
+
+

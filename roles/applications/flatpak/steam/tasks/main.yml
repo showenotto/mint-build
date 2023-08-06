@@ -1,0 +1,4 @@
+---
+- name: Installing Steam...
+  shell: flatpak install flathub com.valvesoftware.Steam
+  become: true
