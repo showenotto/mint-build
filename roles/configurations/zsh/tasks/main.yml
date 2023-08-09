@@ -1,9 +1,8 @@
 ---
   - include_vars: /home/showen/mint-build/static_variables.yml
   - name: Installing Zsh...
-    apt:
-      name: zsh
-      state: latest
+    shell: |
+      sudo apt install zsh zsh-syntax-highlighting zsh-autosuggestions -y
   - name: Setting Zsh as default shell...
     shell: echo "{{ PASSWD }}" | su showen -c 'chsh -s /bin/zsh'
   - name: Copying Zsh configuration file...
