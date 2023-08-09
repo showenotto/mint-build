@@ -32,6 +32,12 @@ bindkey '^[[Z' undo
 bindkey '^U' backward-kill-line
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
+
+#Enable Vi Mode in terminal
+bindkey -v
+export INSERT_MODE_INDICATOR="%F{cyan}+%f"
+bindkey -M viins md-mode
+bindkey '^R' history-incremental-search-backward
 #$Key binds##
 
 
