@@ -9,6 +9,5 @@
       src: "{{ BASE_DIR }}/roles/configurations/cinnamon-desktop/files/motd"
       dest: /etc/motd
     become: true
-    become_user: showen
 
 
