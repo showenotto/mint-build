@@ -1,5 +1,5 @@
 ---
-  - name: Synchronizing configuration files...
+  - name: Backing configuration files...
     hosts: localhost
     tasks:
       - include_vars: /home/showen/mint-build/static_variables.yml
