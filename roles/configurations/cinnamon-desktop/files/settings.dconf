@@ -4,7 +4,7 @@ installed-apps=['apt:ansible', 'apt:git', 'apt:tmux', 'apt:vim', 'apt:zsh', 'apt
 
 [com/linuxmint/updates]
 install-last-run=1690967766
-refresh-last-run=1692029391
+refresh-last-run=1691567612
 show-welcome-page=false
 window-height=570
 window-pane-position=344
@@ -108,6 +108,7 @@ secondary-click-enabled=false
 secondary-click-time=1.2
 
 [org/gnome/desktop/interface]
+clock-format='24h'
 document-font-name='Noto Sans CJK HK 9'
 monospace-font-name='Noto Sans CJK HK 9'
 toolkit-accessibility=false
