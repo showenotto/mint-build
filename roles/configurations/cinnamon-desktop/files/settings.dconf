@@ -29,6 +29,7 @@ secondary-click-time=1.2
 [org/cinnamon/desktop/interface]
 cursor-blink-time=1200
 cursor-theme='DMZ-Black'
+font-name='Hack 9'
 gtk-theme='Mint-Y-Dark-Aqua'
 icon-theme='Mint-Y-Dark-Aqua'
 text-scaling-factor=1.0
@@ -67,6 +68,9 @@ repeat-interval=uint32 30
 [org/cinnamon/desktop/sound]
 event-sounds=false
 
+[org/cinnamon/desktop/wm/preferences]
+titlebar-font='Hack 9'
+
 [org/cinnamon/settings-daemon/peripherals/keyboard]
 numlock-state='off'
 
@@ -103,6 +107,8 @@ secondary-click-enabled=false
 secondary-click-time=1.2
 
 [org/gnome/desktop/interface]
+document-font-name='Hack 9'
+monospace-font-name='Hack 9'
 toolkit-accessibility=false
 
 [org/gnome/evolution-data-server]
@@ -110,6 +116,7 @@ migrated=true
 network-monitor-gio-name=''
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+font='Monospace 12'
 use-system-font=false
 
 [org/gtk/settings/file-chooser]
@@ -125,6 +132,9 @@ sort-order='ascending'
 type-format='category'
 window-position=(172, 6)
 window-size=(1096, 822)
+
+[org/nemo/desktop]
+font='Hack 9'
 
 [org/nemo/window-state]
 geometry='800x550+29+29'
