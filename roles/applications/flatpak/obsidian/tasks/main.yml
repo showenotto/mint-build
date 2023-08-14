@@ -1,4 +1,5 @@
 ---
   - name: Installing Obsidian...
-    shell: flatpak install flathub md.obsidian.Obsidian
+    shell: flatpak install -y --noninteractive flathub md.obsidian.Obsidian
     become: true
+    become_user: showen

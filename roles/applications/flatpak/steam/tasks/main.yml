@@ -1,4 +1,5 @@
 ---
 - name: Installing Steam...
-  shell: flatpak install flathub com.valvesoftware.Steam
+  shell: flatpak install -y --noninteractive flathub com.valvesoftware.Steam
   become: true
+  become_user: showen

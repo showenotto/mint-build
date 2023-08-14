@@ -1,5 +1,6 @@
 ---
   - name: Installing Brave...
-    shell: flatpak install flathub com.brave.Browser
+    shell: flatpak install -y --noninteractive flathub com.brave.Browser
     become: true
+    become_user: showen
 
