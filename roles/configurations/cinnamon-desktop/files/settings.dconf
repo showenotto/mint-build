@@ -35,6 +35,8 @@ text-scaling-factor=1.0
 toolkit-accessibility=false
 
 [org/cinnamon/desktop/keybindings]
+magnifier-zoom-in=['<Alt>equal']
+magnifier-zoom-out=['<Alt>minus']
 show-desklets=@as []
 
 [org/cinnamon/desktop/keybindings/media-keys]
@@ -106,6 +108,9 @@ toolkit-accessibility=false
 [org/gnome/evolution-data-server]
 migrated=true
 network-monitor-gio-name=''
+
+[org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+use-system-font=false
 
 [org/gtk/settings/file-chooser]
 date-format='regular'
