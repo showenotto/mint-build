@@ -116,7 +116,7 @@ migrated=true
 network-monitor-gio-name=''
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
-font='Monospace 12'
+font='Monospace 10'
 use-system-font=false
 
 [org/gtk/settings/file-chooser]
