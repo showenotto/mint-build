@@ -34,11 +34,15 @@ bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 bindkey '^A' beginning-of-line
 bindkey '^E' end-of-line
+bindkey '^R' history-incremental-search-backward
 
 #Enable Vi Mode in terminal
-export INSERT_MODE_INDICATOR="%F{cyan}+%f"
+bindkey -v
 bindkey -M viins 'jj' vi-cmd-mode
-bindkey '^R' history-incremental-search-backward
+bindkey -M viins "\C-a." beginning-of-line
+bindkey -M viins "\C-e." end-of-line
+bindkey -M viins "\C-w." backward-kill-word
+export INSERT_MODE_INDICATOR="%F{cyan}+%f"
 #$Key binds##
 
 
