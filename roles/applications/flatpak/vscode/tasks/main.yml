@@ -2,7 +2,7 @@
   - name: Installing Visual Studio Code...
     shell: |
       flatpak install -y flathub com.visualstudio.code
-      flatpak install -y flathub org.freedesktop.Sdk.Extension.openjdk17
+      flatpak install -y flathub org.freedesktop.Sdk.Extension.openjdk
     become: true
     become_user: showen
 

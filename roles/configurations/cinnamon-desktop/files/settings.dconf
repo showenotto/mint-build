@@ -1,10 +1,11 @@
 [com/linuxmint/install]
 flatpak-remotes=['flathub::https://dl.flathub.org/repo/::False']
 installed-apps=['apt:ansible', 'apt:git', 'apt:tmux', 'apt:vim', 'apt:zsh', 'apt:zsh-syntax-highlighting']
+search-in-category=false
 
 [com/linuxmint/updates]
 install-last-run=1690967766
-refresh-last-run=1691567612
+refresh-last-run=1692197513
 show-welcome-page=false
 window-height=570
 window-pane-position=344
