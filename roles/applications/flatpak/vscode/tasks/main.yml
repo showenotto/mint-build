@@ -1,9 +1,11 @@
 ---
+  - include_vars: vars/main.yml
   - name: Installing Visual Studio Code...
     shell: flatpak install -y flathub com.visualstudio.code
-  - name: Installing SDK Extensions...
+  - name: "Installing SDK Extension: {{ item }}..."
     shell: |
-      flatpak install -y flathub org.freedesktop.Sdk.Extension.openjdk
+      flatpak install -y "{{ item }}"
+    loop: "{{ SDK_EXTENSIONS }}" 
     become: true
     become_user: showen
 
