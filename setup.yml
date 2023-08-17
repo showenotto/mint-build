@@ -7,6 +7,8 @@
       - roles/configurations/tmux
       - roles/configurations/vim
       - roles/configurations/zsh
+      - roles/configurations/sudo
+      - roles/configurations/motd
       # Applications
       - roles/applications/flatpak/vscode
       - roles/applications/flatpak/brave

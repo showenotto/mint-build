@@ -1,0 +1,6 @@
+---
+  - name: Setting Motd configuration...
+    copy:
+      src: "{{ BASE_DIR }}/roles/configurations/cinnamon-desktop/files/motd"
+      dest: /etc/motd
+

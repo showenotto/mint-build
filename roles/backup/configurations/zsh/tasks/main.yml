@@ -1,0 +1,6 @@
+---
+  - include_vars: /home/showen/mint-build/static_variables.yml
+  - name: Backuping Zsh configuraton...
+    copy:
+      src: /home/showen/.zshrc
+      dest: "{{ BASE_DIR }}/roles/configurations/zsh/files/"

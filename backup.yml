@@ -1,32 +1,21 @@
 ---
-  - name: Backing configuration files...
+  - name: Backing Linux Mint...
     hosts: localhost
-    tasks:
-      - include_vars: /home/showen/mint-build/static_variables.yml
-      - name: Backuping up Cinnamon desktop configuration...
-        shell: su showen -c "dconf dump / > {{ BASE_DIR }}/roles/configurations/cinnamon-desktop/files/settings.dconf"
-      - name: Backing up Tmux configuration...
-        copy:
-          src: /etc/tmux.conf
-          dest: "{{ BASE_DIR }}/roles/configurations/tmux/files/"
-      - name: Backuping Zsh configuraton...
-        copy:
-          src: /home/showen/.zshrc
-          dest: "{{ BASE_DIR }}/roles/configurations/zsh/files/"
-      - name: Backuping Vim configuraton...
-        copy:
-          src: /home/showen/.vimrc
-          dest: "{{ BASE_DIR }}/roles/configurations/vim/files/"
-      - name: Copying Sudoers configuration...
-        copy: 
-          src: /etc/sudoers
-          dest: "{{ BASE_DIR }}/roles/configurations/cinnamon-desktop/files/sudoers"
-      - name: Pushing changes to git repository...
-        shell: |
-          git config --global user.email "showenotto@proton.me"
-          git add .
-          git commit -m "1.0" 
-          git push
-        args:
-          chdir: "{{ BASE_DIR }}/"
+    roles:
+      #Configurations
+      - roles/backup/configurations/cinnamon-desktop
+      - roles/backup/configurations/tmux
+      - roles/backup/configurations/zsh
+      - roles/backup/configurations/vim
+      - roles/backup/configurations/sudo
+      #Applications
+  - tasks: 
+    - name: Pushing changes to Git repository...
+      shell: |
+        git config --global user.email "showenotto@proton.me"
+        git add .
+        git commit -m "1.0" 
+        git push
+      args:
+        chdir: "{{ BASE_DIR }}/"
     become: true
