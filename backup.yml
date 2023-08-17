@@ -1,5 +1,5 @@
 ---
-  - name: Backing Linux Mint...
+  - name: Backing up Linux Mint...
     hosts: localhost
     roles:
       #Configurations
