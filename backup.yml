@@ -9,8 +9,8 @@
       - roles/backup/configurations/vim
       - roles/backup/configurations/sudo
       #Applications
-      #- roles/backup/applications/flatpak/vscode
-  - name: Pushing changes to Git repository...
+      - roles/backup/applications/flatpak/vscode
+  - name:
     hosts: localhost
     tasks:
       - name: Pushing changes to Git repository...
