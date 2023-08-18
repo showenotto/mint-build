@@ -2,6 +2,8 @@
   - name: "Setting up Linux Mint..."
     hosts: localhost
     roles:
+      #Initializations
+      - roles/initialize/packages
       #Configurations
       - roles/configurations/cinnamon-desktop
       - roles/configurations/tmux
