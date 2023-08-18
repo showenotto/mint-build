@@ -1,11 +1,10 @@
 [com/linuxmint/install]
 flatpak-remotes=['flathub::https://dl.flathub.org/repo/::False']
-installed-apps=['apt:ansible', 'apt:git', 'apt:tmux', 'apt:vim', 'apt:zsh', 'apt:zsh-syntax-highlighting']
-search-in-category=false
+installed-apps=['apt:ansible', 'apt:docker-compose', 'apt:docker.io', 'apt:fonts-hack', 'apt:git', 'apt:maven', 'apt:tmux', 'apt:vim', 'apt:zsh', 'apt:zsh-autosuggestions', 'apt:zsh-syntax-highlighting', 'fp:flathub:app/com.visualstudio.code/x86_64/stable', 'fp:flathub:app/com.brave.Browser/x86_64/stable']
 
 [com/linuxmint/updates]
 install-last-run=1690967766
-refresh-last-run=1692197513
+refresh-last-run=1692348705
 show-welcome-page=false
 window-height=570
 window-pane-position=344
@@ -27,12 +26,18 @@ dwell-time=1.2
 secondary-click-enabled=false
 secondary-click-time=1.2
 
+[org/cinnamon/desktop/applications/calculator]
+exec='gnome-calculator'
+
+[org/cinnamon/desktop/applications/terminal]
+exec='gnome-terminal'
+
 [org/cinnamon/desktop/interface]
 cursor-blink-time=1200
 cursor-theme='DMZ-Black'
-font-name='Noto Sans CJK HK 9'
+font-name='Ubuntu 10'
 gtk-theme='Mint-Y-Dark-Aqua'
-icon-theme='Mint-Y-Aqua'
+icon-theme='Mint-Y-Dark-Aqua'
 text-scaling-factor=1.0
 toolkit-accessibility=false
 
@@ -53,14 +58,24 @@ terminal=['<Alt>space']
 www=['<Super>b']
 
 [org/cinnamon/desktop/keybindings/wm]
-activate-window-menu=['<Primary>space']
+activate-window-menu=['Alt_L']
 close=['<Alt>c']
-maximize=['<Alt>m']
+decrease-opacity=['<Alt>d']
+increase-opacity=['<Alt>i']
+maximize=@as []
+maximize-horizontally=['<Alt>j']
+maximize-vertically=['<Alt>k']
 minimize=['<Alt>n']
+panel-run-dialog=['<Super>r']
 push-tile-down=@as []
 push-tile-up=@as []
 switch-windows-backward=['<Shift><Alt>Tab']
-unmaximize=['<Primary><Alt>m']
+toggle-maximized=['<Alt>m']
+toggle-shaded=@as []
+unmaximize=@as []
+
+[org/cinnamon/desktop/media-handling]
+autorun-never=false
 
 [org/cinnamon/desktop/peripherals/keyboard]
 delay=uint32 500
@@ -70,14 +85,14 @@ repeat-interval=uint32 30
 event-sounds=false
 
 [org/cinnamon/desktop/wm/preferences]
-titlebar-font='Noto Sans CJK HK 9'
+titlebar-font='Ubuntu Medium 10'
 
 [org/cinnamon/settings-daemon/peripherals/keyboard]
 numlock-state='off'
 
 [org/cinnamon/settings-daemon/plugins/xsettings]
 buttons-have-icons=true
-hinting='full'
+rgba-order='vbgr'
 
 [org/cinnamon/theme]
 name='Mint-Y-Dark-Aqua'
@@ -110,8 +125,8 @@ secondary-click-time=1.2
 
 [org/gnome/desktop/interface]
 clock-format='24h'
-document-font-name='Noto Sans CJK HK 9'
-monospace-font-name='Noto Sans CJK HK 9'
+document-font-name='Sans 10'
+monospace-font-name='Monospace 10'
 toolkit-accessibility=false
 
 [org/gnome/evolution-data-server]
@@ -128,19 +143,19 @@ location-mode='path-bar'
 show-hidden=false
 show-size-column=true
 show-type-column=true
-sidebar-width=148
+sidebar-width=151
 sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(172, 6)
+window-position=(0, 0)
 window-size=(1096, 822)
 
 [org/nemo/desktop]
-font='Noto Sans CJK HK 9'
+font='Ubuntu 10'
 
 [org/nemo/window-state]
-geometry='800x550+29+29'
+geometry='800x550+28+28'
 maximized=false
 sidebar-bookmark-breakpoint=5
 start-with-sidebar=true
