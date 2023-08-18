@@ -10,14 +10,15 @@
       - roles/backup/configurations/sudo
       #Applications
       #- roles/backup/applications/flatpak/vscode
-  - tasks: 
-      hosts: localhost
-    - name: Pushing changes to Git repository...
-      shell: |
-        git config --global user.email "showenotto@proton.me"
-        git add .
-        git commit -m "1.0" 
-        git push
-      args:
-        chdir: "{{ BASE_DIR }}/"
+  - name: Pushing changes to Git repository...
+    hosts: localhost
+    tasks:
+      - name: Pushing changes to Git repository...
+        shell: |
+          git config --global user.email "showenotto@proton.me"
+          git add .
+          git commit -m "1.0" 
+          git push
+        args:
+          chdir: "{{ BASE_DIR }}/"
     become: true
