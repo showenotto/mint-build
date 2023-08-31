@@ -4,13 +4,14 @@ installed-apps=['apt:ansible', 'apt:docker-compose', 'apt:docker.io', 'apt:fonts
 
 [com/linuxmint/updates]
 install-last-run=1690967766
-refresh-last-run=1692348705
+refresh-last-run=1693525165
 show-welcome-page=false
 window-height=570
 window-pane-position=344
 window-width=790
 
 [org/cinnamon]
+desklet-snap-interval=25
 enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:1:separator@cinnamon.org:1', 'panel1:left:2:grouped-window-list@cinnamon.org:2', 'panel1:right:0:systray@cinnamon.org:3', 'panel1:right:1:xapp-status@cinnamon.org:4', 'panel1:right:2:notifications@cinnamon.org:5', 'panel1:right:3:printers@cinnamon.org:6', 'panel1:right:4:removable-drives@cinnamon.org:7', 'panel1:right:5:keyboard@cinnamon.org:8', 'panel1:right:6:favorites@cinnamon.org:9', 'panel1:right:7:network@cinnamon.org:10', 'panel1:right:8:sound@cinnamon.org:11', 'panel1:right:9:power@cinnamon.org:12', 'panel1:right:10:calendar@cinnamon.org:13', 'panel1:right:11:cornerbar@cinnamon.org:14']
 enabled-desklets=@as []
 next-applet-id=15
@@ -32,12 +33,16 @@ exec='gnome-calculator'
 [org/cinnamon/desktop/applications/terminal]
 exec='gnome-terminal'
 
+[org/cinnamon/desktop/background/slideshow]
+delay=15
+image-source='xml:///usr/share/cinnamon-background-properties/linuxmint.xml'
+
 [org/cinnamon/desktop/interface]
 cursor-blink-time=1200
-cursor-theme='DMZ-Black'
+cursor-theme='Adwaita'
 font-name='Ubuntu 10'
 gtk-theme='Mint-Y-Dark-Aqua'
-icon-theme='Mint-Y-Dark-Aqua'
+icon-theme='Mint-L-Aqua'
 text-scaling-factor=1.0
 toolkit-accessibility=false
 
@@ -155,8 +160,10 @@ window-size=(1096, 822)
 font='Ubuntu 10'
 
 [org/nemo/window-state]
-geometry='800x550+28+28'
+devices-expanded=true
+geometry='800x550+799+129'
 maximized=false
+network-expanded=true
 sidebar-bookmark-breakpoint=5
 start-with-sidebar=true
 
