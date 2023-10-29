@@ -12,9 +12,11 @@
       - roles/configurations/sudo
       - roles/configurations/motd
       # Applications
-      - roles/applications/flatpak/vscode
+        # Flatpaks
       - roles/applications/flatpak/brave
+      - roles/applications/flatpak/vscodium
       - roles/applications/flatpak/obsidian
-      - roles/applications/flatpak/steam
+        # System Packages (.deb)
+      - roles/applications/deb/steam
 
 

@@ -1,3 +1,10 @@
+[apps/seahorse/listing]
+keyrings-selected=['gnupg://']
+
+[apps/seahorse/windows/key-manager]
+height=476
+width=600
+
 [com/linuxmint/install]
 flatpak-remotes=['flathub::https://dl.flathub.org/repo/::False']
 installed-apps=['apt:ansible', 'apt:docker-compose', 'apt:docker.io', 'apt:fonts-hack', 'apt:git', 'apt:maven', 'apt:tmux', 'apt:vim', 'apt:zsh', 'apt:zsh-autosuggestions', 'apt:zsh-syntax-highlighting', 'fp:flathub:app/com.visualstudio.code/x86_64/stable', 'fp:flathub:app/com.brave.Browser/x86_64/stable']
@@ -14,14 +21,30 @@ window-pane-position=344
 window-width=790
 
 [org/cinnamon]
+alttab-switcher-delay=100
 desklet-snap-interval=25
 enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:1:separator@cinnamon.org:1', 'panel1:left:2:grouped-window-list@cinnamon.org:2', 'panel1:right:0:systray@cinnamon.org:3', 'panel1:right:1:xapp-status@cinnamon.org:4', 'panel1:right:2:notifications@cinnamon.org:5', 'panel1:right:3:printers@cinnamon.org:6', 'panel1:right:4:removable-drives@cinnamon.org:7', 'panel1:right:5:keyboard@cinnamon.org:8', 'panel1:right:6:favorites@cinnamon.org:9', 'panel1:right:7:network@cinnamon.org:10', 'panel1:right:8:sound@cinnamon.org:11', 'panel1:right:9:power@cinnamon.org:12', 'panel1:right:10:calendar@cinnamon.org:13', 'panel1:right:11:cornerbar@cinnamon.org:14']
 enabled-desklets=@as []
+hotcorner-layout=['expo:false:0', 'scale:false:0', 'scale:false:0', 'desktop:false:0']
 next-applet-id=15
+panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 28, "center": 28, "right": 16}]'
+panels-autohide=['1:false']
+panels-height=['1:35']
+window-effect-speed=1
+
+[org/cinnamon/cinnamon-session]
+quit-time-delay=60
 
 [org/cinnamon/desktop/a11y/applications]
 screen-keyboard-enabled=false
 screen-reader-enabled=false
+
+[org/cinnamon/desktop/a11y/keyboard]
+bouncekeys-delay=300
+mousekeys-accel-time=300
+mousekeys-init-delay=300
+mousekeys-max-speed=10
+slowkeys-delay=300
 
 [org/cinnamon/desktop/a11y/mouse]
 dwell-click-enabled=false
@@ -95,10 +118,21 @@ repeat-interval=uint32 30
 event-sounds=false
 
 [org/cinnamon/desktop/wm/preferences]
+min-window-opacity=30
 titlebar-font='Ubuntu Medium 10'
+
+[org/cinnamon/launcher]
+check-frequency=300
+memory-limit=4096
+
+[org/cinnamon/muffin]
+draggable-border-width=10
 
 [org/cinnamon/settings-daemon/peripherals/keyboard]
 numlock-state='off'
+
+[org/cinnamon/settings-daemon/plugins/power]
+button-power='shutdown'
 
 [org/cinnamon/settings-daemon/plugins/xsettings]
 buttons-have-icons=true
@@ -106,6 +140,10 @@ rgba-order='vbgr'
 
 [org/cinnamon/theme]
 name='Mint-Y-Dark-Aqua'
+
+[org/gnome/baobab/ui]
+window-size=(960, 600)
+window-state=87168
 
 [org/gnome/calculator]
 accuracy=9
@@ -171,7 +209,8 @@ col-6-width=0
 document-type='photo'
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
-font='Monospace 10'
+cursor-blink-mode='on'
+font='DejaVu Sans Mono 10'
 use-system-font=false
 
 [org/gtk/settings/color-chooser]
@@ -283,7 +322,12 @@ y=873
 y-bottom=0
 
 [org/nemo/desktop]
+computer-icon-visible=true
 font='Ubuntu 10'
+home-icon-visible=false
+network-icon-visible=false
+trash-icon-visible=true
+volumes-visible=false
 
 [org/nemo/preferences]
 default-folder-viewer='list-view'
@@ -293,11 +337,33 @@ devices-expanded=true
 geometry='800x550+799+129'
 maximized=true
 network-expanded=false
+side-pane-view='places'
 sidebar-bookmark-breakpoint=5
 start-with-sidebar=true
 
 [org/x/apps/portal]
 color-scheme='prefer-dark'
+
+[org/x/editor/plugins]
+active-plugins=['textsize', 'spell', 'open-uri-context-menu', 'docinfo', 'filebrowser', 'joinlines', 'modelines', 'bracketcompletion', 'time', 'sort']
+
+[org/x/editor/plugins/filebrowser/on-load]
+root='file:///'
+tree-view=true
+virtual-root='file:///media/showen/persistence'
+
+[org/x/editor/preferences/ui]
+statusbar-visible=true
+
+[org/x/editor/state/window]
+bottom-panel-size=140
+side-panel-active-page=827629879
+side-panel-size=200
+size=(650, 500)
+state=87168
+
+[org/x/viewer/window]
+maximized=true
 
 [org/x/warpinator/preferences]
 ask-for-send-permission=true

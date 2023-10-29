@@ -1,7 +1,7 @@
 ---
   - include_vars: vars/main.yml
-  - name: Installing Visual Studio Code...
-    shell: flatpak install -y flathub com.visualstudio.code
+  - name: Installing VS Codium...
+    shell: flatpak install -y flathub com.vscodium.codium
   - name: "Installing SDK Extension: {{ item }}..."
     shell: |
       flatpak install -y "{{ item }}"
