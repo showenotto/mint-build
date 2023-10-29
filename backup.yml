@@ -9,7 +9,6 @@
       - roles/backup/configurations/vim
       - roles/backup/configurations/sudo
       #Applications
-      - roles/backup/applications/flatpak/vscode
   - name:
     hosts: localhost
     tasks:
