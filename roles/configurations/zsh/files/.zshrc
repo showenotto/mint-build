@@ -34,6 +34,8 @@ bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 bindkey '^A' beginning-of-line
 bindkey '^E' end-of-line
+bindkey '^H' backward-kill-word
+bindkey '5~' kill-word
 
 #Enable Vi Mode in terminal
 export INSERT_MODE_INDICATOR="%F{cyan}+%f"
