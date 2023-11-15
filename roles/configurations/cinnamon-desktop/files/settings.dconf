@@ -13,6 +13,7 @@ installed-apps=['apt:ansible', 'apt:docker-compose', 'apt:docker.io', 'apt:fonts
 favorite-apps-list=['location:/usr/share/applications/firefox.desktop\n', 'location:/usr/share/applications/thunderbird.desktop\n', 'location:/usr/share/applications/pix.desktop\n', 'location:/usr/share/applications/rhythmbox.desktop\n', 'separator\n', 'location:/usr/share/applications/gnome-calculator.desktop\n', 'location:/usr/share/applications/gcalctool.desktop\n', 'location:/usr/share/applications/org.gnome.Calculator.desktop\n', 'location:/usr/share/applications/xed.desktop\n', 'location:/usr/share/applications/mate-terminal.desktop\n', 'location:/usr/share/applications/gnome-terminal.desktop\n', 'location:/usr/share/applications/mate-volume-control.desktop\n', 'location:/usr/share/applications/cinnamon-settings-sound.desktop\n', 'location:/usr/share/applications/xfce4-mixer.desktop\n', 'separator\n', 'location:/usr/share/applications/mate-display-properties.desktop\n', 'location:/usr/share/applications/cinnamon-display-panel.desktop\n', 'location:/usr/share/applications/xfce-display-settings.desktop\n', 'location:/usr/share/applications/mate-system-monitor.desktop\n', 'location:/usr/share/applications/gnome-system-monitor.desktop\n', 'location:/usr/share/applications/xfce4-taskmanager.desktop\n']
 
 [com/linuxmint/updates]
+default-repo-is-ok=true
 install-last-run=1690967766
 refresh-last-run=1693599393
 show-welcome-page=false
@@ -114,6 +115,12 @@ autorun-never=false
 delay=uint32 500
 repeat-interval=uint32 30
 
+[org/cinnamon/desktop/screensaver]
+lock-enabled=true
+
+[org/cinnamon/desktop/session]
+idle-delay=uint32 0
+
 [org/cinnamon/desktop/sound]
 event-sounds=false
 
@@ -133,6 +140,7 @@ numlock-state='off'
 
 [org/cinnamon/settings-daemon/plugins/power]
 button-power='shutdown'
+sleep-display-ac=0
 
 [org/cinnamon/settings-daemon/plugins/xsettings]
 buttons-have-icons=true

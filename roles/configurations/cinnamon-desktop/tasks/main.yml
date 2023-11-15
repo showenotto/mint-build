@@ -1,7 +1,10 @@
 ---
   - include_vars: /home/showen/mint-build/static_variables.yml
   - name: Setting Cinnamon Desktop configurations...
-    shell: su showen -c "dconf load / < {{ BASE_DIR }}/roles/configurations/cinnamon-desktop/files/settings.dconf"
+    shell: |
+      su showen -c "dconf load / < {{ BASE_DIR }}/roles/configurations/cinnamon-desktop/files/settings.dconf"
+      cp "{{ BASE_DIR }}/roles/configurations/cinnamon-desktop/files/redshift.conf" /home/showen/.config/redshift.conf
+      chown showen:showen /home/showen/.config/redshift.conf
     become: true
 
 
