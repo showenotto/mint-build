@@ -73,8 +73,8 @@ if [ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
 	ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter]=fg=magenta,bold
 	ZSH_HIGHLIGHT_STYLES[process-substitution]=none
 	ZSH_HIGHLIGHT_STYLES[process-substitution-delimiter]=fg=magenta,bold
-	ZSH_HIGHLIGHT_STYLES[single-hyphen-option]=fg=green
-	ZSH_HIGHLIGHT_STYLES[double-hyphen-option]=fg=green
+	ZSH_HIGHLIGHT_STYLES[single-hyphen-option]=fg=cyan,bold
+	ZSH_HIGHLIGHT_STYLES[double-hyphen-option]=fg=cyan,bold
 	ZSH_HIGHLIGHT_STYLES[back-quoted-argument]=none
 	ZSH_HIGHLIGHT_STYLES[back-quoted-argument-delimiter]=fg=blue,bold
 	ZSH_HIGHLIGHT_STYLES[single-quoted-argument]=fg=yellow

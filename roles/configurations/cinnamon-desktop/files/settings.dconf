@@ -15,7 +15,7 @@ favorite-apps-list=['location:/usr/share/applications/firefox.desktop\n', 'locat
 [com/linuxmint/updates]
 default-repo-is-ok=true
 install-last-run=1690967766
-refresh-last-run=1693599393
+refresh-last-run=1700057203
 show-welcome-page=false
 window-height=570
 window-pane-position=344
