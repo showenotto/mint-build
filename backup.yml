@@ -9,15 +9,23 @@
       - roles/backup/configurations/vim
       - roles/backup/configurations/sudo
       #Applications
-  - name:
+
+
+  - name: 
     hosts: localhost
     tasks:
-      - name: Pushing changes to Git repository...
+      - name: Backing up 'mint-build' to USB...
+        copy:
+          src: /home/showen/mint-build/
+          dest: /media/backup/Linux-Mint/mint-build/
+        become: true
+
+      - name: Backing up 'mint-build' to GitHub... 
         shell: |
           git config --global user.email "showenotto@proton.me"
           git add .
           git commit -m "1.0" 
           git push
         args:
-          chdir: "{{ BASE_DIR }}/"
-    become: true
+          chdir: /home/showen/mint-build/
+        become: true

@@ -1,6 +1,0 @@
----
-  - name: Installing Whatsapp...
-    shell: flatpak install -y --noninteractive flathub io.github.mimbrero.WhatsAppDesktop
-    become: true
-    become_user: showen
-

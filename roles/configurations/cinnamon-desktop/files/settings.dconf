@@ -32,6 +32,7 @@ panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 28, "center": 28, "right
 panels-autohide=['1:false']
 panels-height=['1:35']
 window-effect-speed=1
+workspace-osd-visible=true
 
 [org/cinnamon/cinnamon-session]
 quit-time-delay=60
@@ -109,10 +110,15 @@ toggle-shaded=@as []
 unmaximize=@as []
 
 [org/cinnamon/desktop/media-handling]
+automount-open=false
 autorun-never=false
+
+[org/cinnamon/desktop/notifications]
+notification-duration=4
 
 [org/cinnamon/desktop/peripherals/keyboard]
 delay=uint32 500
+numlock-state=false
 repeat-interval=uint32 30
 
 [org/cinnamon/desktop/screensaver]
@@ -134,6 +140,7 @@ memory-limit=4096
 
 [org/cinnamon/muffin]
 draggable-border-width=10
+workspace-cycle=true
 
 [org/cinnamon/settings-daemon/peripherals/keyboard]
 numlock-state='off'
@@ -189,6 +196,10 @@ toolkit-accessibility=false
 migrated=true
 network-monitor-gio-name=''
 
+[org/gnome/file-roller/dialogs/extract]
+recreate-folders=true
+skip-newer=false
+
 [org/gnome/file-roller/listing]
 list-mode='as-folder'
 name-column-width=250
@@ -216,10 +227,16 @@ col-6-width=0
 [org/gnome/simple-scan]
 document-type='photo'
 
+[org/gnome/terminal/legacy/keybindings]
+paste='<Primary>v'
+
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 cursor-blink-mode='on'
+default-size-columns=224
+default-size-rows=47
 font='DejaVu Sans Mono 10'
 use-system-font=false
+visible-name='Showen'
 
 [org/gtk/settings/color-chooser]
 selected-color=(true, 0.75294117647058822, 0.74901960784313726, 0.73725490196078436, 1.0)
@@ -369,6 +386,9 @@ side-panel-active-page=827629879
 side-panel-size=200
 size=(650, 500)
 state=87168
+
+[org/x/reader/default]
+window-ratio=(1.4109347442680775, 0.69947607561860481)
 
 [org/x/viewer/window]
 maximized=true

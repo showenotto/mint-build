@@ -1,4 +1,7 @@
 ---
-  - include_vars: /home/showen/mint-build/static_variables.yml
-  - name: Setting Sudo configurations...
-    shell: echo "{{ PASSWD }}" | sudo -S cp "{{ BASE_DIR }}"/roles/configurations/cinnamon-desktop/files/sudoers /etc/sudoers
+  - name: Configuring sudo...
+    copy:
+      src: /home/showen/mint-build/roles/configurations/sudo/files/sudoers
+      dest: /etc/sudoers
+      mode: '0440'
+    become: true 

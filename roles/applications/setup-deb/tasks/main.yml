@@ -1,0 +1,7 @@
+---
+  - include_vars: vars/main.yml
+  - name: Installing Applications [DEB]...
+    apt:
+      pkg: "{{ item }}"
+      state: latest
+    loop: "{{ PACKAGES }}"  

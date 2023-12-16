@@ -4,5 +4,7 @@ PACKAGES: [
   "vim",
   "tmux",
   "tree",
-  "gparted"
+  "gparted",
+  "zsh-autosuggestions",
+  "zsh-syntax-highlighting"
 ]

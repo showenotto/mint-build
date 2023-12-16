@@ -1,6 +1,0 @@
----
-  - name: Installing Discord...
-    shell: flatpak install -y --noninteractive flathub com.discordapp.Discord
-    become: true
-    become_user: showen
-

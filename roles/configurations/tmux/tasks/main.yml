@@ -1,11 +1,7 @@
 ---
-  - include_vars: /home/showen/mint-build/static_variables.yml
-  - name: Installing Tmux...
-    apt:
-      name: tmux
-      state: present
-  - name: Setting Tmux configurations...
+  - name: Configuring tmux...
     copy:
-      src: "{{ BASE_DIR }}/roles/configurations/tmux/files/tmux.conf"
+      src: /home/showen/mint-build/roles/configurations/tmux/files/tmux.conf
       dest: /etc/tmux.conf
     become: true
+ 

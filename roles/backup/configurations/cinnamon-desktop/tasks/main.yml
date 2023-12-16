@@ -1,6 +1,8 @@
 ---
-  - include_vars: /home/showen/mint-build/static_variables.yml
-  - name: Backuping up Cinnamon desktop configuration...
-    shell: |
-      su showen -c "dconf dump / > {{ BASE_DIR }}/roles/configurations/cinnamon-desktop/files/settings.dconf"
-      cp /home/showen/.config/redshift.conf "{{ BASE_DIR }}/roles/configurations/cinnamon-desktop/files/redshift.conf"
+  - name: Backing up Cinnamon Desktop configurations...
+    shell: su showen -c "dconf dump / > /home/showen/mint-build/roles/configurations/cinnamon-desktop/files/settings.dconf"
+
+  - name: Backing up redshift configurations...
+    copy:
+      src: /home/showen/.config/redshift.conf
+      dest: /home/showen/mint-build/roles/configurations/cinnamon-desktop/files/redshift.conf

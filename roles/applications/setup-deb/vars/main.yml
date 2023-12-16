@@ -1,0 +1,7 @@
+---
+PACKAGES : [
+  "docker.io",
+  "docker-compose",
+  "steam-installer",
+  "inkscape"
+]

@@ -1,6 +1,5 @@
 ---
-  - include_vars: /home/showen/mint-build/static_variables.yml
-  - name: Backing up Tmux configuration...
+  - name: Backing up tmux configurations...
     copy:
       src: /etc/tmux.conf
-      dest: "{{ BASE_DIR }}/roles/configurations/tmux/files/"
+      dest: /home/showen/mint-build/roles/configurations/tmux/files/

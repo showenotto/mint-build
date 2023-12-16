@@ -12,15 +12,8 @@
       - roles/configurations/sudo
       - roles/configurations/motd
       # Applications
-        # Flatpaks
-      - roles/applications/flatpak/brave
-      - roles/applications/flatpak/whatsapp
-      - roles/applications/flatpak/discord
-      - roles/applications/flatpak/vscodium
-      #- roles/applications/flatpak/obsidian
-        # System Packages (.deb)
-      - roles/applications/deb/steam
-      - roles/applications/deb/inkscape
+      - roles/applications/setup-deb
+      - roles/applications/setup-flatpaks
 
 
 

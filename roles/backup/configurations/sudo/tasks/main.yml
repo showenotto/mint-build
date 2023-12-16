@@ -1,6 +1,5 @@
 ---
-  - include_vars: /home/showen/mint-build/static_variables.yml
-  - name: Copying Sudo configuration...
+  - name: Backing up sudo configurations...
     copy:                                                                                     
       src: /etc/sudoers 
-      dest: "{{ BASE_DIR }}/roles/configurations/cinnamon-desktop/files/sudoers"
+      dest: /home/showen/mint-build/roles/configurations/cinnamon-desktop/files/sudoers
