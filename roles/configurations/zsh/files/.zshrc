@@ -132,6 +132,8 @@ done
 #^mint
 alias mint-backup="sudo ansible-playbook /home/showen/mint-build/backup.yml"
 alias log-out="cinnamon-session-quit --logout --force"
+alias start-kali="VBoxManage startvm \"Kali Linux\""
+alias stop-kali="VBoxManage controlvm \"Kali Linux\" poweroff"
 #$mint
 
 #$Aliases
