@@ -10,14 +10,13 @@
       - roles/backup/configurations/sudo
       #Applications
 
-
   - name: 
     hosts: localhost
     tasks:
       - name: Backing up 'mint-build' to USB...
         copy:
           src: /home/showen/mint-build/
-          dest: /media/backup/Linux-Mint/mint-build/
+          dest: /media/backup/usb/Linux-Mint/mint-build/
         become: true
 
       - name: Backing up 'mint-build' to GitHub... 

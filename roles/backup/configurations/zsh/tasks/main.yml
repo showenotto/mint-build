@@ -2,4 +2,4 @@
   - name: Backing up zsh configurations...
     copy:
       src: /home/showen/.zshrc
-      dest: /home/showen/roles/configurations/zsh/files/
+      dest: /home/showen/mint-build/roles/configurations/zsh/files/
